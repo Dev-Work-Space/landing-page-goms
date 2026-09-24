@@ -26,9 +26,10 @@ Os testes cobrem cinco larguras de tela (320–1440px), âncoras, menu móvel, f
 src/
   components/    # Navbar, botões, cards, previews, títulos e scroll reveal
     ui/          # Carousel, Avatar, Card e Button do shadcn/ui
-  sections/      # Hero, Services, Work, Process, About, Contact e Footer
+  sections/      # Hero, Services, Comparison, Productivity, Work, Process, About, Contact e Footer
   data/site.ts   # Navegação, portfólio e configuração de contato
   data/team.ts   # Perfis individuais de Bruno e Joao
+  data/productivity.ts # Premissas ilustrativas e tempos da simulação de produtividade
   styles.css     # Tokens Tailwind, estilos dos componentes e responsividade
   App.tsx
   main.tsx
@@ -44,6 +45,8 @@ public/
 - Marca: usei Goms em toda a página. A menção a Algox no briefing foi tratada como remanescente.
 - SEO: title, description e tags Open Graph estão em `index.html`. Ao publicar em um domínio definitivo, acrescente canonical, `og:url` e uma imagem social com URL absoluta.
 - Cores e fonte: tokens em `@theme`, no início de `src/styles.css`.
+- Comparativo: `src/sections/Comparison.tsx` apresenta controles manuais e processos conectados. As ilustrações em `OperationPreview.tsx` usam CSS e Lucide, seguindo os previews existentes.
+- Produtividade: a seção `Productivity.tsx` simula de 20 a 300 operações mensais. Os tempos hipotéticos por atividade ficam em `src/data/productivity.ts` (24 min em planilhas e 6 min em sistema por operação). Indicadores e gráficos derivam dessas premissas; não representam resultados medidos de clientes. Atualize os tempos com dados validados antes de apresentar ganhos reais.
 
 ## Decisões
 
@@ -58,4 +61,5 @@ public/
 Paleta: `#101211` (fundo), `#191C19` (superfícies), `#30352F` (bordas), `#F4F5EF` (texto), `#A6ADA3` (apoio), `#C8F56A` (destaque).
 
 # landing-page
+
 # la-lolla

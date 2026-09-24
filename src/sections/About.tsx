@@ -33,7 +33,7 @@ export function About() {
     <section id="quem" className="section container">
       <Reveal>
         <SectionHeading
-          number="04"
+          number="06"
           label="QUEM FAZ"
           title={
             <>

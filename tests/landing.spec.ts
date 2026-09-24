@@ -10,7 +10,15 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       width,
     )
-    for (const id of ['servicos', 'trabalhos', 'como', 'quem', 'contato']) {
+    for (const id of [
+      'servicos',
+      'comparativo',
+      'produtividade',
+      'trabalhos',
+      'como',
+      'quem',
+      'contato',
+    ]) {
       await expect(page.locator(`#${id}`)).toBeAttached()
     }
     if (width === 390 || width === 1440) {

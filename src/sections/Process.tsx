@@ -25,7 +25,7 @@ export function Process() {
     <section id="como" className="section container">
       <Reveal>
         <SectionHeading
-          number="03"
+          number="05"
           label="COMO TRABALHO"
           title={
             <>

@@ -9,7 +9,7 @@ export function Work() {
       <div className="container">
         <Reveal>
           <SectionHeading
-            number="02"
+            number="04"
             label="NO AR"
             title={
               <>
