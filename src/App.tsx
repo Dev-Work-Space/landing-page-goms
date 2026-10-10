@@ -9,7 +9,7 @@ import { About } from './sections/About'
 import { Contact } from './sections/Contact'
 import { Footer } from './sections/Footer'
 
-export function App() {
+export function App({ year = new Date().getFullYear() }: { year?: number }) {
   return (
     <>
       <a className="skip-link" href="#main">
@@ -26,7 +26,7 @@ export function App() {
         <About />
         <Contact />
       </main>
-      <Footer />
+      <Footer year={year} />
     </>
   )
 }

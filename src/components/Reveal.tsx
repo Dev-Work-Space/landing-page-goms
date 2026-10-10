@@ -12,11 +12,10 @@ export function Reveal({ children, className = '' }: { children: ReactNode; clas
     )
       return
     if (element.getBoundingClientRect().top < window.innerHeight) return
-    element.classList.add('reveal-pending')
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          element.classList.remove('reveal-pending')
+          element.classList.add('reveal-enter')
           observer.disconnect()
         }
       },
@@ -25,7 +24,7 @@ export function Reveal({ children, className = '' }: { children: ReactNode; clas
     observer.observe(element)
     return () => {
       observer.disconnect()
-      element.classList.remove('reveal-pending')
+      element.classList.remove('reveal-enter')
     }
   }, [])
   return (

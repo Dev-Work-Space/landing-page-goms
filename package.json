@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && node scripts/build.mjs",
+    "test:seo": "node --test tests/seo.test.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
+    "test:production": "npm run build && playwright test --config playwright.production.config.ts",
     "format": "prettier --write src tests index.html *.ts *.json README.md"
   },
   "dependencies": {

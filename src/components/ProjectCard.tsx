@@ -38,6 +38,7 @@ export function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </button>
+      <p className="project-summary">{project.detail}</p>
       <dialog
         ref={dialog}
         className="project-dialog"

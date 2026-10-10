@@ -10,7 +10,7 @@ export function Work() {
         <Reveal>
           <SectionHeading
             number="04"
-            label="NO AR"
+            label="ESTUDOS DE INTERFACE"
             title={
               <>
                 Ideias que ganham tela<span className="text-accent">.</span>

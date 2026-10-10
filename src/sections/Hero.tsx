@@ -11,14 +11,14 @@ export function Hero() {
             <span className="status-dot" /> SOFTWARE COM INTENÇÃO.
           </p>
           <h1 id="hero-title">
-            Boas ideias
+            Sites e
             <br />
-            merecem um
+            sistemas
             <br />
-            <span>bom software.</span>
+            <span>sob medida.</span>
           </h1>
           <p className="hero-description">
-            Transformo ideias em experiências digitais.
+            Transformamos ideias em experiências digitais.
             <br className="hidden sm:block" /> Sites, sistemas e aplicações feitos para o seu
             negócio.
           </p>
