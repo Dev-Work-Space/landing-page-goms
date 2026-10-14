@@ -8,7 +8,7 @@ export function Footer({ year }: { year: number }) {
         <Brand />
         <p>Software bem pensado. Feito por gente.</p>
       </div>
-      <span>© {year} Goms</span>
+      <span>© {year} Goms.tech</span>
       <a href="#inicio" className="back-top">
         De volta ao topo <ArrowUp size={16} aria-hidden="true" />
       </a>
